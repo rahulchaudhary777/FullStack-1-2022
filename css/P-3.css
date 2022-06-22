@@ -1,0 +1,47 @@
+body{
+    background-color: lavender;
+    padding: 3%;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+h1{
+    text-align: center;
+    color: rgb(64, 61, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 3%;
+}
+
+@media (max-width:780px){
+    h1{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+img{
+    border-radius: 5%;
+    margin: 4%;
+}
+.card{
+    margin: 7% 1.5%;
+}
+
+.card-text{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+
+#footer{
+    text-align: center;
+    padding: 4%;
+}
