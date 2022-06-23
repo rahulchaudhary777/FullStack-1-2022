@@ -1,0 +1,72 @@
+#bdy{ 
+    margin: 6% 13%;
+}
+
+.navbar{
+    margin: 0% 13%;
+}
+.nav-item{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 3%;
+    
+}
+
+#navItem{
+    padding: 3%;
+    color: #fff;
+}
+
+.team-head{
+    font-weight: bold;
+    text-align: center;
+    padding: 4% 0 3%;
+}
+
+ .team-image{
+    border-radius: 50%;
+    margin: 10%;
+ }
+
+ .about-left-side{
+    background-color: gray;
+ }
+
+ .about-head{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 2% 0%;
+ }
+
+ p{
+    line-height: 1.8;
+    /* font-weight: 600; */
+    font-size: 1.2rem;
+    color: #fff;
+ }
+ .project{
+    height: 15%;
+    width: 100%;
+    margin: 0 0% 3%;
+ }
+
+ #cards{
+    /* margin: 0 2  %; */
+ }
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+    padding: 2% 0;
+}
+
+ .card-text{
+    color: black;
+    /* margin-top: 23%; */
+ }
+
+ .card-image{
+    border-radius: 5%;
+    margin: 3%;
+ }
