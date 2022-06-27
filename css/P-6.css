@@ -1,0 +1,53 @@
+.bdr{
+    border: 2px solid #34495e;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3%;
+}
+
+table thead tr{
+    background-color: #34495e;
+    color: #fff;
+    line-height: 2;
+}
+
+table tbody tr .sr-no{
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+table tbody tr .practical{
+    width: 30%;
+}
+
+table tbody tr .link{
+    color: rgb(137, 127, 127);
+    vertical-align: middle;
+}
+
+table tbody tr .status{
+    color: green;
+    vertical-align: middle;
+}
+
+table tbody tr .icon{
+    color: grey;
+    vertical-align: middle;
+    padding: 1%;
+    /* width: 10%; */
+}
+
+table tbody tr .icon .fa-pen:hover{
+    color: blue;
+}
+
+table tbody tr .icon .fa-trash{
+    /* color: gray; */
+    /* padding-left: 30px; */
+    /* padding-right: -20px; */
+    
+}
+table tbody tr .icon .fa-trash:hover{
+    color: red;
+}
