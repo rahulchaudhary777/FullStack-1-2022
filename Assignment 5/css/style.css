@@ -1,0 +1,39 @@
+
+body{
+  background-color: #7FB5FF;
+}
+h2{
+  text-align: center;
+  display: block;
+}
+
+.header{
+  color:#fff;
+  background-color: #000;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px 30px;
+
+}
+.result-box{
+  background-color: #F15412;
+  width: 50%;
+  min-height: 500px;
+  margin: auto auto;
+  color: #A91079;
+
+
+}
+
+
+#myTable{
+
+  color:#000;
+margin: 40px 150px;
+  justify-content:;
+}
+
+.heading4{
+  color:black;
+
+}
