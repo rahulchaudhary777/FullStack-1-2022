@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <!-- Font Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/be6b871522.js" crossorigin="anonymous"></script> -->
+
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(173, 40, 173);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            border: 10px solid grey;
+            border-top-color: white;
+            border-radius: 50%;
+            animation: loader 1.5s linear infinite;
+        }
+
+        .container p{
+            text-transform: uppercase;
+            margin-top: 20px;
+            color: white;
+            font-size: 30px;
+            letter-spacing: 5px;
+            font-family: cursive;
+            animation: flash 1.5s linear infinite;
+        }
+
+        span{
+            font-size: 50px;
+        }
+
+        
+
+        @keyframes loader {
+            
+            0%{
+                transform: none;
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes flash {
+            0%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <p>Loading <span>...</span></p>
+    </div>
+</body>
