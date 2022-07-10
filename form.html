@@ -4,84 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/be6b871522.js" crossorigin="anonymous"></script>
+
     <title>Registration Form</title>
 
-    <style>
-
-        body{
-            background-color: rgb(31, 129, 190);
-        }
-        .container{
-            width: 500px;
-            height: 600px;
-            margin: auto;
-            border-radius: 30px;
-            background-color: rgb(194, 188, 188);
-            margin-top: 50px;
-            padding: 0 10%;
-            border: 3px solid blue;
-            font-size: 1.1rem;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        span{
-            color: darkred;
-            
-        }
-
-        h1{
-            text-align: center;
-            padding-top: 3%;
-            padding-bottom: 3%;
-        }
-
-        input[type="text"], input[type=password], input[type="number"], input[type="date"]{
-            border-radius:10px;
-            width: 200px;
-            height:28px;
-            box-shadow: 2px 2px 8px black;
-        }
-
-        input[placeholder="Enter First Name"], input[placeholder="Enter Last name"], input[placeholder="Enter Password"], input[placeholder="Enter Phone Number"], input[placeholder="dob"]
-        {
-            padding-left: 10%;
-        }
-
-        label{
-            
-            padding-right: 3%;
-        }
-
-        .gender, .city, .dob{
-            margin: 4% 0;
-        }
-
-        .hobbies{
-            margin: 2% 0;
-        }
-
-        /* .city{
-            margin: 4% 0;
-        } */
-
-        .city #city-box{
-            border-radius: 10px;
-            width: 200px;
-            height: 30px;
-            margin-left: 5%;
-            box-shadow: 2px 2px 8px black;
-        }
-
-        input[type="Submit"], input[type="Reset"]{
-            border-radius: 15px;
-            width: 90px;
-            height: 35px;
-            color: #fff;
-            background-color: black;
-            margin-right: 2%;
-            margin-top: 3%;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
     
@@ -93,28 +22,27 @@
 
             <div class="name">
                 <label for="">Enter First Name: <span>*</span></label>
-                
-                
-                <input type="text" placeholder="Enter First Name" required>
+                <input type="text" id="fname" required>
                 <br><br>
-                <label for="">Enter Last Name: </label>
-                <input type="text" placeholder="Enter Last name">
+
+                <label for="">Enter Last Name: &nbsp</label>
+                <input type="text" id="lname">
             </div>
 
             <div class="password">
                 <br>
-                <label for="">Enter Password: <span>*</span></label>
-                <input type="password" placeholder="Enter Password" required>
+                <label for="">Enter Password: &nbsp<span>*</span></label>
+                <input type="password" required id="password"><span><i class="fa-solid fa-eye"></i></span>
             </div>
             <div class="gender">
                 <label for="">Select your Gender: <span>*</span></label>
-                <input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Male" required id="gender">Male
                 <input type="radio" name="gender" required value="Female">Female
             </div>
 
             <div class="hobbies">
-                <label for="">Hobbies: </label>
-                <input type="checkbox" name="hobbies" checked>Coding
+                <label for="">Hobbies: &nbsp &nbsp &nbsp</label>
+                <input type="checkbox" name="hobbies" checked id="hobby">Coding
                 <input type="checkbox" name="hobbies">Singing
                 <input type="checkbox" name="hobbies">Cooking
                 <input type="checkbox" name="hobbies">Reading
@@ -133,22 +61,24 @@
             </div>
 
             <div class="mobile">
-                <label for="">Enter Mobile Number: <span>*</span></label>
-                <input type="number" placeholder="Enter Phone Number" required>
+                <label for="">Mobile Number: <span>*</span>&nbsp &nbsp</label>
+                <input type="number" id="mobile" required>
             </div>
 
             <div class="dob">
-                <label for="">Date of Birth: </label>
-                <input type="date" placeholder="dob">
+                <label for="">Date of Birth: &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+                <input type="date" id="birthDate">
             </div>
 
             <div class="btn">
-                <input type="Submit" value="Submit">
-                <input type="Reset">
+                <input type="Submit" value="Submit" id="submit">
+                <input type="Reset" id="reset">
             </div>
             
 
         </form>
     </div>
+
+    <script src="./js/form.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Data</title>
+
+</head>
+<body>
+    <h1>Storage Data</h1>
+    <p id="paragraph"></p>
+
+    <a href="./localStorage.html"><button>Go Back</button></a>
+
+
+    <script>
+        var para = document.getElementById("paragraph");
+        data = JSON.parse(localStorage.getItem("Info"));
+        console.log(data);
+
+        para.innerHTML = `Name :- ${data.name}, Email :- ${data.email}, Password :- ${data.password}`
+    </script>
+</body>

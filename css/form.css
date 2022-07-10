@@ -1,0 +1,81 @@
+body{
+            background-color: rgb(82, 147, 82);
+            height: 100vh;
+        }
+        .container{
+            width: 500px;
+            height: 600px;
+            margin: auto;
+            border-radius: 30px;
+            background-color: rgb(194, 188, 188);
+            margin-top: 50px;
+            padding: 0 10%;
+            font-size: 1.1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        span{
+            color: darkred;
+            
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        input[type="text"], input[type=password], input[type="number"], input[type="date"]{
+            border-radius:10px;
+            width: 200px;
+            height:28px;
+            box-shadow: 2px 2px 8px black;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+        }
+
+         .city #city-box{
+            border-radius:10px;
+            width: 200px;
+            height:32px;
+            box-shadow: 2px 2px 8px black;
+            font-size: 15px;
+            padding-left: 20px;
+            margin-left: 50px;
+        }
+
+        input[type="text"], input[type="password"], input[type="number"], input[type="date"]
+        {
+            padding-left: 20px;
+        }
+
+        label{
+            
+            padding-right: 3%;
+        }
+
+        .fa-eye, .fa-eye-slash{
+            margin-left: 10px;
+            color: rgb(101, 98, 98)
+        }
+
+        .gender, .city, .dob{
+            margin: 4% 0;
+        }
+
+        .hobbies{
+            margin: 2% 0;
+        }
+
+        input[type="Submit"], input[type="Reset"]{
+            border-radius: 10px;
+            width: 90px;
+            height: 35px;
+            color: black;
+            background-color: rgb(90, 169, 90);
+            margin-right: 2%;
+            margin-top: 3%;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 3px 3px 8px black;
+        }
