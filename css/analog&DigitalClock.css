@@ -34,6 +34,8 @@ body{
     
 
 }
+
+
 .clock{
     position: relative;
     height: 450px;
@@ -49,6 +51,8 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
 
 .clock::before{
     content: "";
@@ -106,7 +110,7 @@ body{
 }
 
 .circle:nth-child(2) i{
-    width: 6px;
+    width: 4px;
 }
 
 .circle2{
@@ -137,8 +141,6 @@ body{
 #time{
     margin-bottom: 40px;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     padding: 10px 20px;
     font-size: 2rem;
     font-weight: 600;
@@ -182,6 +184,73 @@ body{
     }
     50%{
         opacity: 0;
+    }
+
+}
+
+@media (min-width:340px) and (max-width:650px) {
+    .clock{
+        height: 300px;
+        width: 300px;
+    }
+
+    .clock::before{
+        width: 4px;
+        height: 4px;
+    }
+
+    .clock span{
+        inset: 8px;
+    }
+
+    .clock span b{
+        font-size: 1.3rem;
+    }
+
+    .circle{
+        width: 210px;
+        height: 210px;
+    }
+
+    .circle2{
+        width: 170px;
+        height: 170px;
+    }
+
+    .circle3{
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle::before{
+        height: 8px;
+        width: 8px;
+        top: -5px;
+    }
+
+    #time{
+        padding: 5px 7px;
+        font-size: 1.5rem;
+    }
+
+    #time div{
+        width: 45px;
+    }
+
+    #time div:last-child{
+        font-size: 0.8rem;
+    }
+
+    .circle i{
+        width: 5px;
+    }
+
+    .circle:nth-child(1) i{
+        width: 1.5px;
+    }
+
+    .circle:nth-child(2) i{
+        width: 3px;
     }
 
 }
