@@ -1,5 +1,10 @@
-.contain{
-            height: 700px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+            height: 730px;
             background-image: linear-gradient(
                     to right,
                     pink 0%,
@@ -10,42 +15,45 @@
             
         }
 
-        #time{
-            text-align: center;
-            padding-top: 250px;
-            font-size: 80px;
-        }
+#time{
+    text-align: center;
+    padding-top: 270px;
+    font-size: 80px;
+}
 
-        #greeting{
-            text-align: center;
-            font-size: 40px;
-        }
+#greeting{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
 
-        #name{
-            height: 40px;
-            width: 350px;
-            
-            outline-color: grey;
-            border: none;
-             background: linear-gradient(
-                    to right,
-                    pink 0%,
-                    pink 50%,
-                    paleturquoise 50%,
-                    paleturquoise 100%
-                );
+#name{
+    height: 40px;
+    width: 350px;
+    
+    outline-color: grey;
+    border: none;
+        background: linear-gradient(
+            to right,
+            pink 0%,
+            pink 50%,
+            paleturquoise 50%,
+            paleturquoise 100%
+        );
+        /* opacity: 0.3; */
 
-            font-size: 30px;
-            font-weight: bold;
-            font-family: cursive;
-            text-align: center;
-            color: rgb(70, 67, 67);
-            display: block;
-            margin: auto;
-            /* margin-right: auto; */
-        }
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    color: rgb(70, 67, 67);
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
 
-        #month{
-            text-align: center;
-            font-size: 25px;
-        }
+#month{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
