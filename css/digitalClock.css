@@ -1,0 +1,51 @@
+.contain{
+            height: 700px;
+            background-image: linear-gradient(
+                    to right,
+                    pink 0%,
+                    pink 50%,
+                    paleturquoise 50%,
+                    paleturquoise 100%
+                );
+            
+        }
+
+        #time{
+            text-align: center;
+            padding-top: 250px;
+            font-size: 80px;
+        }
+
+        #greeting{
+            text-align: center;
+            font-size: 40px;
+        }
+
+        #name{
+            height: 40px;
+            width: 350px;
+            
+            outline-color: grey;
+            border: none;
+             background: linear-gradient(
+                    to right,
+                    pink 0%,
+                    pink 50%,
+                    paleturquoise 50%,
+                    paleturquoise 100%
+                );
+
+            font-size: 30px;
+            font-weight: bold;
+            font-family: cursive;
+            text-align: center;
+            color: rgb(70, 67, 67);
+            display: block;
+            margin: auto;
+            /* margin-right: auto; */
+        }
+
+        #month{
+            text-align: center;
+            font-size: 25px;
+        }
