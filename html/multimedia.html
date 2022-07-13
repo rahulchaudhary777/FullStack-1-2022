@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <!-- Font Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/be6b871522.js" crossorigin="anonymous"></script> -->
+
+    <style>
+        .betalab{
+            width: 400;
+            height: 400;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 class="connectivity">offline</h2>
+    <h1>Multimedia content</h1>
+    <h2>Audio Tag</h2>
+    <!-- <audio controls>                                           ---- multiple sources
+        <source src="./audio/y2mate.com - 10 Seconds Video Clip.mp3">
+        <source src="./audio/y2mate.com - All over in 10 seconds.mp3">
+    </audio> -->
+
+    <!-- <audio src="./audio/y2mate.com - 10 Seconds Video Clip.mp3" controls loop></audio> -->
+    <video src="./audio/All over in 10 seconds.mp4" controls width="500" height="285" loop></video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lTTajzrSkCw" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <iframe class="betalab" src="https://beta-labs.in" frameborder="0"></iframe>
+
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+        <script>
+            // $("iframe").on("mouseover", function() {
+            //     console.log($("video"));
+            //     var audio = $("video");
+            //     audio.play();
+            // })
+
+            var x = document.getElementsByTagName("video")[0];
+            var y = document.getElementsByTagName("iframe")[0];
+
+            y.addEventListener("mouseover", function (){
+                x.play();
+            })
+            y.addEventListener("mouseleave", function () {
+                    x.pause();
+                })
+            
+            document.addEventListener("visibilitychange", function(){
+                if(document.hidden){x.pause()}
+                else(x.play())
+            })
+
+            var head = document.querySelector("h2");
+
+            
+
+            // function onlineStatus (){
+            //     console.log(head);
+            //     head.innerHTML = "online"
+            //     // head.style.color = "green";
+            // }
+
+            // function offlineStatus() {
+            //         console.log(head);
+            //         head.innerHTML = "offline"
+            //         // head.style.color = "red";
+            //     }
+
+            
+                // if (navigator.onLine) {
+                //     head.innerHTML = "online";
+                // }
+                // else {
+                //     head.innerHTML = "offline";
+                // }
+                
+             if (navigator.onLine) {
+                    alert('online');
+                } else {
+                    alert('offline');
+                }
+        </script>
+
+</body>
+</html>

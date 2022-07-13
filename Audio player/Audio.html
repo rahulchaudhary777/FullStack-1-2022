@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio player</title>
+
+    <!-- css page link  -->
+    <link rel="stylesheet" href="./audio.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/be6b871522.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="audio-box">
+            <div class="image">
+                <img src="./images/song-1.jpg" alt="295" width="150px" height="150px">
+            </div>
+            <div class="content">
+                <h2 id="musicName">Track 1</h2>
+                <a title="l" href="#"><i class="audioIcon fa-lg fa-solid fa-volume-low"></i></a>
+                
+                <a href="#"><i class="audioIcon fa-lg fa-solid fa-shuffle"></i></a>
+                
+                <a href="#"><i class="audioIcon fa-lg fa-regular fa-heart"></i></a>
+                
+                <a title="h" href="#"><i class="audioIcon fa-lg fa-solid fa-volume-high"></i></a>
+                
+
+                <audio src="./songs/song-1.mp3" controls hidden></audio>
+                
+            </div>
+            <div class="music-bar">
+                <p class="p1"></p>
+                <div class="progress-bar">
+                    <div class="progress">
+
+                    </div>
+                </div>
+                <p class=p2></p>
+            </div>
+            <div class="footer">
+                <a href="#"><i class="play fa-2xl fa-solid fa-play"></i></a>
+            
+                <a href="#"><i class="play backward fa-xl fa-solid fa-backward"></i></a>
+            
+                <a href="#"><i class="play forward fa-xl fa-solid fa-forward"></i></a>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="./audio.js"></script>
+</body>

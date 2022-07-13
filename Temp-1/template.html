@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/assignment.png">
+
+    <!-- css page link -->
+    <link rel="stylesheet" href="./template.css">
+
+    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/be6b871522.js" crossorigin="anonymous"></script>
+
+
+    <title>Assignment</title>
+</head>
+
+<body>
+    <div id="header">
+        <p id="logo">R</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="buy_rogan">
+            <a href="#">Buy Rogan &#x2192</a></div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <p class="p1"><span>70% off</span> for first 3 months</p>
+            <h1>Digital Agency with Excellence Services.</h1>
+            <p class="p2">The 3 golden rules professional graphic designer don't</p>
+
+        </div>
+        <div class="right">
+            <img src="./assets/images/image.jpg" alt="coder">
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 id="n">[Student Name]</h2>
+        <h2 id="roll">[University Roll No]</h2>
+        <h2 id="uni">Gla University,Mathura</h2>
+        <h2 id="date"></h2>
+    </div>
+
+    <script>
+        var n = document.getElementById("n");
+        var roll = document.getElementById("roll");
+        var date = document.getElementById("date");
+
+        n.innerHTML = "Rahul";
+        roll.innerHTML = "201500542";
+
+        var day = new Date();
+        var d = day.getDate();
+        var month = day.getMonth();
+        var year = day.getFullYear();
+
+        date.innerHTML = `${d}-${month}-${year}`;
+
+    </script>
+</body>
