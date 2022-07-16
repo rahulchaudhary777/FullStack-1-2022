@@ -20,12 +20,14 @@
     <h2 class="connectivity">offline</h2>
     <h1>Multimedia content</h1>
     <h2>Audio Tag</h2>
-    <!-- <audio controls>                                           ---- multiple sources
+    
+    <audio controls>                                           
         <source src="./audio/y2mate.com - 10 Seconds Video Clip.mp3">
         <source src="./audio/y2mate.com - All over in 10 seconds.mp3">
-    </audio> -->
+    </audio>
 
-    <!-- <audio src="./audio/y2mate.com - 10 Seconds Video Clip.mp3" controls loop></audio> -->
+    <audio src="./audio/y2mate.com - 10 Seconds Video Clip.mp3" controls loop></audio>
+
     <video src="./audio/All over in 10 seconds.mp4" controls width="500" height="285" loop></video>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/lTTajzrSkCw" title="YouTube video player"
@@ -35,14 +37,14 @@
     <iframe class="betalab" src="https://beta-labs.in" frameborder="0"></iframe>
 
 
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
-            // $("iframe").on("mouseover", function() {
-            //     console.log($("video"));
-            //     var audio = $("video");
-            //     audio.play();
-            // })
+            $("iframe").on("mouseover", function() {
+                console.log($("video"));
+                var audio = $("video");
+                audio.play();
+            })
 
             var x = document.getElementsByTagName("video")[0];
             var y = document.getElementsByTagName("iframe")[0];
