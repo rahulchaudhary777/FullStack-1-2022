@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    padding: 0 20px;
+}
+
+.header h2 {
+    line-height: 70px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.header .menu {
+    list-style: none;
+    float: right;
+}
+
+.header .menu li {
+    display: inline-block;
+    line-height: 70px;
+}
+
+.header .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 20px;
+    transition: 1s;
+}
+
+.header .menu li a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.showbtn,
+.hidebtn {
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.showbtn {
+    float: right;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -10;
+}
+
+
+
+#sec1 {
+    background-image: url(../Images/cooding\ A-8.jpg);
+    background-size: cover;
+    height: 900px;
+    margin-top: 100px;
+}
+
+#sec1 p {
+    font-size: 50px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.heding {
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle img {
+    border-radius: 50%;
+}
+
+#sec3 {
+    margin: 20px;
+}
+
+#sec3 .box {
+    width: 50%;
+    height: 500px;
+    background-color: rgba(197, 206, 214, 0.555);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#sec3 .box p {
+    margin: 10px;
+    font-size: 25px;
+}
+
+#sec3 .notes {
+    width: 50%;
+    height: 500px;
+}
+
+.notes .not {
+    color: black;
+    font-size: 50px;
+    width: 100%;
+    height: 160px;
+    margin: 10px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.not img {
+    width: 100%;
+}
+
+#sec4 {
+    display: flex;
+    text-align: justify;
+}
+
+#sec4 .cards {
+    width: 300px;
+    height: 350px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+#sec4 .cards img {
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    margin: 12px;
+}
+.cards p,h3{
+    margin: 10px;
+}
+
+.cards a {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px
+}
+
+#footer{
+    background-color:pink;
+}
+
+#footer p{
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; 
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@media (max-width:800px) {
+
+    .showbtn,
+    .hidebtn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        text-align: center;
+        padding: 80px 0;
+        transition: .7s;
+        line-height: normal;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hidebtn {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    #sec1 {
+        background-size: cover
+    }
+
+    #sec2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    #sec3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sec3 .box {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    #sec3 .notes .not {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notes .not {
+        border-radius: 10px;
+        width: 350px;
+        width: 250px;
+        margin-left: 60px;
+    }
+    .heding{
+        margin-top: 50px;
+    }
+
+    #sec4{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    #sec4 .cards{
+        width: 328px;
+        height: 360px;
+    }
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 160px;
+    }
+
+}
