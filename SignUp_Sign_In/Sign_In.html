@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"
+    integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Sign_In</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            margin: auto;
+            margin-top: 30px;
+            width: 700px;
+            height: 500px;
+            background: linear-gradient(rgba(130, 60, 228, 0.57), #410a94c5);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .container1 {
+            margin: auto;
+            margin-top: 23px;
+            width: 600px;
+            height: 450px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .container1 h1 {
+
+            color: #410a94c5;
+            font-size: 50px;
+
+            margin: 20px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 300px;
+        }
+
+        .btn {
+            text-align: center;
+            width: 120px;
+            height: 35px;
+            background: #410a94c5;
+            line-height: 35px;
+            border-radius: 10px;
+            margin-left: 90px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px rgba(73, 72, 72, 0.848);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        span {
+            position: relative;
+            left: -13%;
+            cursor: pointer;
+        }
+
+        #eye {
+            width: 25px;
+            height: 25px;
+            border: 1px solid black;
+            border-radius: 50%;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        .ac{
+            position: absolute;
+            bottom: 50px;
+            left: 30%;
+        }
+
+        .ac a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <h1>Sign In</h1>
+            <form action="">
+                <input type="email" placeholder="Email" id="email" autocomplete="username">
+                <br>
+                <div class="show">
+                    <input type="password" placeholder="password" id="pass" autocomplete="current-password">
+
+                    <span><i class="fa fa-eye" aria-hidden="true" id="eye"></i>
+                    </span>
+                </div>
+
+                <div class="btn" id="btn">
+                    <a href="">Sign In</a>
+                </div>
+
+                <div class="ac">
+                    Already have an account:- <a href="./Sign_Up.html">Sign 
+                        Up
+                    </a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="./Firebase.js"></script>
+
+    <script type="module" src="./Sign_In.js"></script>
+</body>
+
+</html>

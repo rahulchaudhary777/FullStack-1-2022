@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"
+        integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+
+        .back {
+            margin-top: 40px;
+            text-align: center;
+            width: 800px;
+            height: 550px;
+            background: linear-gradient(rgba(130, 60, 228, 0.57), #410a94c5);
+            /* background: linear-gradient(#1b65a7,#040615,#f2f4f5,#ffffff); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .upper {
+            width: 700px;
+            height: 500px;
+            background: white;
+            border-radius: 20px;
+        }
+
+        .upper h1 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #410a94c5;
+            font-size: 50px;
+        }
+
+        .icon {
+            margin: 10px;
+        }
+
+        .icon1 {
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            color: black;
+        }
+
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+
+
+        #btn {
+            margin-left: 270px;
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            background: #410a94c5;
+            font-size: 20px;
+            color: white;
+            line-height: 40px;
+            /* margin-top: 10px; */
+            box-shadow: 5px 5px 10px rgba(73, 72, 72, 0.848);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        #btn a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        span {
+            position: relative;
+            left: -7%;
+            cursor: pointer;
+        }
+
+        #eye{
+            width: 25px;
+            height: 25px;
+            border: 1px solid black;
+            border-radius: 50%;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        .ac{
+            position: absolute;
+            bottom: 50px;
+            left: 42%;
+        }
+
+        .ac a{
+            text-decoration: none;
+        }
+
+        #pass{
+            margin-left: 42px;
+        }
+    </style>
+    <title>Sign_up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="back">
+            <div class="upper">
+                <h1>Create Account</h1>
+                <div class="icon">
+                    <a href=""> <i class="fa fa-facebook icon1 " aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-google-plus  icon1" aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-linkedin  icon1" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="p1">
+                    <p>Or use your Email address</p>
+                </div>
+                <form action="">
+                    <input type="text" id="name" placeholder="Name">
+                    <br>
+                    <input type="email" name="" id="email" placeholder="Email" autocomplete="username">
+                    <br>
+                    <div class="show">
+                        <input type="password" id="pass" placeholder="Password" autocomplete="current-password">
+                        <span>
+                            <i class="fa fa-eye" aria-hidden="true" id="eye"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <div id="btn">
+                        <a href="">Sign Up</a>
+                    </div>
+                    <div class="ac">
+                        Already have an account:- <a href="./Sign_In.html">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./Firebase.js"></script>
+
+    <script type="module" src="./Sign_Up.js"></script>
+</body>
+
+</html>
