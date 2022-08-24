@@ -14,6 +14,7 @@ function create(e) {
 
   data = todoInput.value;
   // console.log(data)
+  
   // alert(data)
   // data.trim();
   data = data.trim();
