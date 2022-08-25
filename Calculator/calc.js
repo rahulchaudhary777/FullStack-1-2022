@@ -110,7 +110,8 @@ themeDiv.addEventListener("click", () => {
     themeDiv.style.backgroundColor = "rgba(255, 255, 255, 0.705)";
     
     num.forEach(element => {
-      element.style.backgroundColor = "rgb(0,0,0)";
+      element.style.backgroundColor = "rgba(0,0,0,0.5)";
+      element.style.boxShadow = "2px 2px 5px rgba(255, 255, 255, 0.4)";
       element.style.color = "white"
     });
 
@@ -131,6 +132,7 @@ themeDiv.addEventListener("click", () => {
 
     num.forEach((element) => {
       element.style.backgroundColor = "rgb(255,255,255)";
+      element.style.boxShadow = "0px 5px 10px rgba(0, 0, 0, 0.4)";
       element.style.color = "black";
     });
 

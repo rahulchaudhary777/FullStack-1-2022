@@ -7,8 +7,8 @@ body{
 }
 
 .container{
-    height: 80%;
-    width: 23%;
+    height: 65%;
+    width: 21%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 5px 8px #7d7d7d;
@@ -16,29 +16,24 @@ body{
 }
 
 .value{
-    height: 90px;
+    width: 98%;
+    margin-top: 10px;
+    height: 60px;
     display: flex;
     justify-content: right;
     align-items: flex-end;
-    width: 98%;
+    /* background: black; */
+    border: none;
+    outline: none;
+    font-size: 25px;
 }
 
-.data{
+/* .data{
      margin: 0;
     padding: 0;
     padding-right: 15px;
     overflow: hidden;
-}
-
-.history #history-value{
-    font-size: 30px;
-    color: rgb(89, 88, 88);
-}
-
-.output #output-value{
-    font-size: 45px;
-    text-overflow: ellipsis;
-}
+} */
 
 .row{
     display: flex;
@@ -50,7 +45,7 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 45%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 8px 15px rgba(128, 127, 127, 0.834);
     background-color: white;
     border: none;
     font-size: 18px;
@@ -102,9 +97,9 @@ body{
     cursor: pointer;
 }
 
-.theme:hover{
+/* .theme:hover{
     transform: scale(1.05)
-}
+} */
 .icon{
     font-size: 40px;
 }
