@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmant</title>
+    <style>
+        #div1 p{
+            color: red;
+        }
+        #div2 >p{
+            color: pink;
+        }
+        #div3 + p{
+            color: purple;
+        }
+        #div3 ~ p{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>1. Using spacing</h1>
+    <div id="div1">
+        <p>Inside the div</p>
+        <section>
+            <p>inside the section</p>
+        </section>
+    </div>
+    <h1>2. By using > sign</h1>
+    <div id="div2">
+        <section><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam eius laborum.</p></section>
+        <p>Direct impliment on p</p>
+    </div>
+    <h1>3. By using + Sign </h1>
+    <div id="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium!</p>
+    </div>
+    <p>Outside the div</p>
+
+    <h1>4. By using ~ Sign</h1>
+    <div id="div4">
+        <p>Inside the Div</p>
+        <p>Inside the Div</p>
+        <p>Inside the Div</p>
+    </div>
+
+    <p>Outside the div</p>
+    <p>Outside the div</p>
+    <p>Outside the div</p>
+
+    </center>
+</body>
+</html>
